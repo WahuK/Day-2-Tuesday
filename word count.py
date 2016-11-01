@@ -1,9 +1,11 @@
-def word_count(str):
-  my_string=str.lower().split()
-  my_dict={}
-  for item in my_string:
-    my_dict[item]=my_string.count(item)
-  print(my_dict)
-  word_count("olly olly in come free")
-
+def words(str):
+  num={}
+  for words in str.split():
+    if word.isdigit():
+      word=int(word)
+    if num.get(word):
+      num[word]+=1
+    else:
+      num[word]=1
+    return num
   
